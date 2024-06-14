@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff; /* Set all text color to white */
+}
+.link{
+    color: blue;
+}
+body {
+    background-color: #000; /* Set the entire body background to black */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+.images{
+    max-height: 10%;
+}
+.navigation {
+    position: sticky;
+    top: 0;
+    background-color: #000; /* Set navigation background to black */
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+.ColoumnWiseFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+    flex-direction: column;
+
+}
+.about_me{
+    background-image: url(images/subhra.png)no-repeat center center fixed;
+    position: relative;
+    height: 100vh;
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.portfolio-item{
+    
+    background-color: #d55858;
+     /* Adjust width as needed */
+    padding: 20px; /* Adjust padding as needed */
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect: horizontal offset, vertical offset, blur radius, color */
+    border-radius: 20px; /* Rounded corners */
+}
+/* New CSS for hover effect */
+.portfolio-item:hover {
+    background-color: #b04444; /* Darker shade of the original background color */
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+    
+}
+
+header {
+    background: #000; /* Set header background to black */
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 0;
+    background-color:#bb4444 ;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section#about {
+    background-color: #aa3333;
+    padding: 2rem;
+    text-align: center; /* Center align text */
+}
+
+section#about p {
+    margin-bottom: 1rem; /* Adjust bottom margin for paragraphs */
+}
+section#contact{
+    background-color: #b83e3e;
+    padding: 2rem;
+    text-align: center; /* Center align text */
+}
+section#Education{
+    background-color: #aa3333;
+}
+.portfolio-item {
+    margin-bottom: 1rem;
+}
+section#Entrepreneurial-Experiences{
+    background-color: #b83e3e;
+    padding: 2rem;
+    text-align: center; /* Center align text */
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.read-more-label {
+    display: block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.read-more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .read-more-content {
+    max-height: 500px; /* Adjust this value based on the content height */
+    transition: max-height 0.5s ease;
+}
